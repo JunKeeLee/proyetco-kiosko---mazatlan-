@@ -1,0 +1,171 @@
+Distance matrix first column found: ID_TIENDA
+Total unique stores: 106
+Weekly stores (fi=2): 102
+Biweekly stores (fi=1): 4
+Min/max/avg demand per delivery (boxes): 52.04 / 242.18 / 126.52
+Distance matrix size: 111 x 111
+Max depot round-trip distance: 314.94 km (store 31180)
+Variable counts:
+  x: 858312
+  y: 8904
+  u: 8904
+  excess_km: 42
+  total: 876162
+Constraint count: 858940
+Greedy solution cost: 21508.09 (distance=4809.53, excess_penalty=16698.56)
+Warm start validation:
+Warm start violations found: 0
+Warm start warnings found: 2
+  - route-warning: v0, d4, r1 route_km=486.73 > 400
+  - route-warning: v2, d10, r2 route_km=486.73 > 400
+Warm start validation summary: 0 violations
+[checkpoint] Saved current best routes to C:\Users\greth\OneDrive\Escritorio\reto_k2.0\outputs\checkpoint_best.xlsx
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - C:\Users\greth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pulp\apis\../solverdir/cbc/win/i64/cbc.exe MT_PVRP_Mazatlan-pulp.mps -mips MT_PVRP_Mazatlan-pulp.mst -sec 3600 -ratio 0.05 -timeMode elapsed -solve -printingOptions all -solution MT_PVRP_Mazatlan-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 858945 COLUMNS
+At line 8610550 RHS
+At line 9469491 BOUNDS
+At line 10336708 ENDATA
+Problem MODEL has 858940 rows, 876162 columns and 5158818 elements
+Coin0008I MODEL read with 0 errors
+opening mipstart file .\MT_PVRP_Mazatlan-pulp.mst.
+MIPStart values read for 876162 variables.
+seconds was changed from 1e+100 to 3600
+ratioGap was changed from 0 to 0.05
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 465.155 - 7.64 seconds
+Cgl0004I processed model has 858940 rows, 876162 columns (867216 integer (867216 of which binary)) and 5158818 elements
+Cbc0045I MIPStart provided solution with cost 21508.1
+[t=5297s] New best solution found: 21508.10 km (gap: unknown)
+[checkpoint] Saved current best routes to C:\Users\greth\OneDrive\Escritorio\reto_k2.0\outputs\checkpoint_best.xlsx
+Cbc0012I Integer solution of 21508.085 found by Reduced search after 0 iterations and 0 nodes (22.55 seconds)
+[t=5319s] New best solution found: 21508.08 km (gap: unknown)
+[checkpoint] Saved current best routes to C:\Users\greth\OneDrive\Escritorio\reto_k2.0\outputs\checkpoint_best.xlsx
+Cbc0038I Full problem 858940 rows 876162 columns, reduced to 840507 rows 8909 columns - too large
+Cbc0013I At root node, 0 cuts changed objective from 465.1553 to 465.1553 in 1 passes
+Cbc0014I Cut generator 0 (Probing) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 5226.322 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (TwoMirCuts) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 7 (ZeroHalf) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 21508.085 (best possible 465.1553), took 0 iterations and 0 nodes (5279.50 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from 465.155 to 465.155
+Probing was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (5226.322 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Stopped on time limit
+
+Objective value:                21508.08540000
+Lower bound:                    465.155
+Gap:                            45.24
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             5290.97
+Time (Wallclock seconds):       5290.97
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       5303.37   (Wallclock seconds):       5303.37
+
+[checkpoint] Saved current best routes to C:\Users\greth\OneDrive\Escritorio\reto_k2.0\outputs\checkpoint_best.xlsx
+Route summary:
+Day 1:
+  Vehicle 0, Trip 1: DEPOT -> [31021 31021 FEDERACION] -> [31017 31017 TAMARINDOS] -> [31152 31152 REAL IXTAPA] -> [31151 31151 VERDE MAZATLAN] -> [31031 31031 GAS LAS JUNTAS] -> [31115 31115 LETRAS MAZATLAN] -> DEPOT (km: 13.86, boxes: 703.86)
+  Vehicle 0, Trip 2: DEPOT -> [31147 31147 JUAREZ IXTAPA] -> [31015 31015 IXTAPA] -> [31065 31065 CRUCERO LAS JUNTAS] -> [31007 31007 MOJONERAS] -> [31092 31092 TAMAULIPAS] -> [31163 31163 AVENIDA MEXICO] -> DEPOT (km: 19.87, boxes: 674.00)
+  Vehicle 1, Trip 1: DEPOT -> [31074 31074 IXTAPA ORQUIDEA] -> [31178 31178 JOAQUIN AMARO] -> [31070 31070 LAS PALMAS] -> [31023 31023 GAS PUENTE AMECA] -> [31029 31029 POETAS] -> DEPOT (km: 31.75, boxes: 708.63)
+  Vehicle 1, Trip 2: DEPOT -> [31129 31129 SENDERO DE LUNA] -> [31120 31120 LAS PIEDRAS] -> [31010 31010 LOS PATOS] -> [31020 31020 JARRETADERAS] -> [31145 31145 ARBOLEDAS] -> [31033 31033 COLOMBIA] -> DEPOT (km: 50.35, boxes: 718.06)
+  Vehicle 2, Trip 1: DEPOT -> [31054 31054 AURORA] -> [31019 31019 ETZIQUIO CORONA] -> [31045 31045 MAZATLAN 500] -> [31179 31179 16 DE SEPTIEMBRE] -> [31116 31116 10 DE MAYO] -> DEPOT (km: 27.21, boxes: 685.84)
+  Vehicle 2, Trip 2: DEPOT -> [31079 31079 EXIQUIO REVOLUCION] -> [31055 31055 SAN JOSE VALLE] -> [31037 31037 MARINA GOLF] -> [31185 31185 FLUVIAL] -> [31044 31044 ALEMANIA] -> [31174 31174 MINA] -> DEPOT (km: 84.51, boxes: 717.73)
+Day 2:
+  Vehicle 0, Trip 1: DEPOT -> [31057 31057 VALLE DORADO] -> [31005 31005 NUEVO MAZATLAN] -> [31059 31059 VILLA GUADALUPE] -> [31169 31169 LAS CARBONERAS] -> [31089 31089 GAS INDIOS BANDERAS] -> DEPOT (km: 64.23, boxes: 660.89)
+  Vehicle 0, Trip 2: DEPOT -> [31039 31039 GOLONDRINA] -> [31035 31035 VIENA] -> [31183 31183 RAMON CORONA] -> [31127 31127 ECOTERRA] -> [31111 31111 INDEPENDENCIA] -> [31086 31086 TULIPANES] -> DEPOT (km: 90.93, boxes: 677.09)
+  Vehicle 1, Trip 1: DEPOT -> [31004 31004 GAS SAN JOSE] -> [31009 31009 EL PORVENIR] -> [31171 31171 TLAXCALA] -> [31148 31148 COSTA CAREYES] -> [31166 31166 JOSEFA ORTIZ] -> DEPOT (km: 67.66, boxes: 712.43)
+  Vehicle 1, Trip 2: DEPOT -> [31082 31082 GAS SAN VICENTE] -> [31081 31081 AZUL TURQUESA] -> [31011 31011 GAS MEZCALES] -> [31053 31053 LOPEZ] -> [31022 31022 TAMPICO] -> DEPOT (km: 56.36, boxes: 660.55)
+  Vehicle 2, Trip 1: DEPOT -> [31018 31018 GAS CENTRO] -> [31048 31048 MISIONES] -> [31128 31128 BUGAMBILIAS] -> [31008 31008 MANGUITOS] -> [31114 31114 VALLE ESMERALDA] -> DEPOT (km: 98.43, boxes: 663.33)
+  Vehicle 2, Trip 2: DEPOT -> [31155 31155 VALLE EL JADE] -> [31001 31001 MORELOS] -> [31124 31124 GOLFO DE MEXICO] -> [31181 31181 VALLE DE ZIRCON] -> [31027 31027 AMAPAS] -> DEPOT (km: 112.93, boxes: 688.26)
+Day 3:
+  Vehicle 0, Trip 1: DEPOT -> [31112 31112 MAR CARIBE] -> [31168 31168 MAR DE JAPON] -> [31113 31113 MANANTIAL] -> [31137 31137 ISLA MALLORCA] -> [31026 31026 SAN VICENTE] -> [31050 31050 VALLE BANDERAS] -> DEPOT (km: 99.54, boxes: 705.93)
+  Vehicle 0, Trip 2: DEPOT -> [31182 31182 PARAISO] -> [31012 31012 GAS FLAMINGOS] -> [31013 31013 SAN JUAN] -> [31094 31094 HIDALGO] -> [31090 31090 REFORMA SAN VICENTE] -> DEPOT (km: 63.02, boxes: 660.74)
+  Vehicle 1, Trip 1: DEPOT -> [31091 31091 20 DE NOVIEMBRE] -> [31107 31107 BUCERIAS NICOLAS BRAVO] -> [31101 31101 MEXICO] -> [31002 31002 BUCERIAS] -> [31131 31131 INGRESO SAYULITA] -> DEPOT (km: 91.48, boxes: 706.93)
+  Vehicle 1, Trip 2: DEPOT -> [31049 31049 GAS LOS PICOS] -> [31041 31041 CRUZ HUANACAXTLE] -> [31051 31051 SAYULITA] -> [31104 31104 REVOLUCION SAYULITA] -> [31052 31052 SAN PANCHO] -> DEPOT (km: 93.17, boxes: 704.66)
+  Vehicle 2, Trip 1: DEPOT -> [31125 31125 PUNTA MITA] -> [31165 31165 CRUCERO SAN PANCHO] -> [31102 31102 LO DE MARCOS] -> [31068 31068 CASA MARGARITA] -> DEPOT (km: 156.43, boxes: 619.35)
+  Vehicle 2, Trip 2: DEPOT -> [31063 31063 GUAYABITOS] -> [31064 31064 GUAYABITOS TABACHINES] -> [31072 31072 LOS AYALA] -> [31162 31162 AV CORAL] -> [31103 31103 LA PEÑITA] -> DEPOT (km: 158.86, boxes: 615.55)
+Day 4:
+  Vehicle 0, Trip 1: DEPOT -> [31080 31080 GAS LA PEÑITA] -> [31161 31161 LOPEZ COTILLA] -> [31159 31159 LOS VENADOS] -> [31160 31160 TALPA INDEPENDENCIA] -> [31136 31136 PINO SUAREZ] -> [31135 31135 GALEANA] -> [31177 31177 CRUCERO LA CUMBRE] -> DEPOT (km: 486.73, boxes: 691.52)
+  Vehicle 0, Trip 2: DEPOT -> [31170 31170 TALPA 23 DE JUNIO] -> [31172 31172 GAS TALPA] -> DEPOT (km: 240.13, boxes: 258.12)
+  Vehicle 1, Trip 1: DEPOT -> [31140 31140 DELFIN] -> [31180 31180 SAN MATEO] -> DEPOT (km: 320.51, boxes: 178.11)
+  Vehicle 1, Trip 2: no trip
+  Vehicle 2, Trip 1: no trip
+  Vehicle 2, Trip 2: no trip
+Day 5: (no routes)
+Day 6: (no routes)
+Day 7: (no routes)
+Day 8:
+  Vehicle 0, Trip 1: DEPOT -> [31021 31021 FEDERACION] -> [31017 31017 TAMARINDOS] -> [31152 31152 REAL IXTAPA] -> [31151 31151 VERDE MAZATLAN] -> [31031 31031 GAS LAS JUNTAS] -> [31115 31115 LETRAS MAZATLAN] -> DEPOT (km: 13.86, boxes: 703.86)
+  Vehicle 0, Trip 2: DEPOT -> [31147 31147 JUAREZ IXTAPA] -> [31065 31065 CRUCERO LAS JUNTAS] -> [31007 31007 MOJONERAS] -> [31074 31074 IXTAPA ORQUIDEA] -> [31092 31092 TAMAULIPAS] -> DEPOT (km: 27.27, boxes: 693.38)
+  Vehicle 1, Trip 1: DEPOT -> [31178 31178 JOAQUIN AMARO] -> [31070 31070 LAS PALMAS] -> [31023 31023 GAS PUENTE AMECA] -> [31129 31129 SENDERO DE LUNA] -> [31163 31163 AVENIDA MEXICO] -> [31120 31120 LAS PIEDRAS] -> DEPOT (km: 25.26, boxes: 716.64)
+  Vehicle 1, Trip 2: DEPOT -> [31010 31010 LOS PATOS] -> [31029 31029 POETAS] -> [31020 31020 JARRETADERAS] -> [31145 31145 ARBOLEDAS] -> [31054 31054 AURORA] -> [31116 31116 10 DE MAYO] -> DEPOT (km: 41.74, boxes: 687.80)
+  Vehicle 2, Trip 1: DEPOT -> [31019 31019 ETZIQUIO CORONA] -> [31045 31045 MAZATLAN 500] -> [31179 31179 16 DE SEPTIEMBRE] -> [31079 31079 EXIQUIO REVOLUCION] -> [31037 31037 MARINA GOLF] -> DEPOT (km: 28.68, boxes: 717.90)
+  Vehicle 2, Trip 2: DEPOT -> [31055 31055 SAN JOSE VALLE] -> [31185 31185 FLUVIAL] -> [31044 31044 ALEMANIA] -> [31057 31057 VALLE DORADO] -> [31005 31005 NUEVO MAZATLAN] -> DEPOT (km: 65.07, boxes: 708.35)
+Day 9:
+  Vehicle 0, Trip 1: DEPOT -> [31169 31169 LAS CARBONERAS] -> [31089 31089 GAS INDIOS BANDERAS] -> [31039 31039 GOLONDRINA] -> [31035 31035 VIENA] -> [31183 31183 RAMON CORONA] -> [31127 31127 ECOTERRA] -> [31033 31033 COLOMBIA] -> DEPOT (km: 119.64, boxes: 713.97)
+  Vehicle 0, Trip 2: DEPOT -> [31111 31111 INDEPENDENCIA] -> [31086 31086 TULIPANES] -> [31004 31004 GAS SAN JOSE] -> [31009 31009 EL PORVENIR] -> [31171 31171 TLAXCALA] -> DEPOT (km: 56.92, boxes: 659.36)
+  Vehicle 1, Trip 1: DEPOT -> [31148 31148 COSTA CAREYES] -> [31082 31082 GAS SAN VICENTE] -> [31081 31081 AZUL TURQUESA] -> [31011 31011 GAS MEZCALES] -> [31166 31166 JOSEFA ORTIZ] -> DEPOT (km: 51.88, boxes: 685.21)
+  Vehicle 1, Trip 2: DEPOT -> [31018 31018 GAS CENTRO] -> [31048 31048 MISIONES] -> [31128 31128 BUGAMBILIAS] -> [31008 31008 MANGUITOS] -> [31114 31114 VALLE ESMERALDA] -> DEPOT (km: 98.43, boxes: 663.33)
+  Vehicle 2, Trip 1: DEPOT -> [31174 31174 MINA] -> [31155 31155 VALLE EL JADE] -> [31001 31001 MORELOS] -> [31124 31124 GOLFO DE MEXICO] -> [31181 31181 VALLE DE ZIRCON] -> [31112 31112 MAR CARIBE] -> DEPOT (km: 114.98, boxes: 692.29)
+  Vehicle 2, Trip 2: DEPOT -> [31027 31027 AMAPAS] -> [31168 31168 MAR DE JAPON] -> [31113 31113 MANANTIAL] -> [31137 31137 ISLA MALLORCA] -> [31026 31026 SAN VICENTE] -> [31013 31013 SAN JUAN] -> DEPOT (km: 125.00, boxes: 701.09)
+Day 10:
+  Vehicle 0, Trip 1: DEPOT -> [31050 31050 VALLE BANDERAS] -> [31182 31182 PARAISO] -> [31012 31012 GAS FLAMINGOS] -> [31094 31094 HIDALGO] -> [31091 31091 20 DE NOVIEMBRE] -> DEPOT (km: 75.78, boxes: 718.71)
+  Vehicle 0, Trip 2: DEPOT -> [31090 31090 REFORMA SAN VICENTE] -> [31107 31107 BUCERIAS NICOLAS BRAVO] -> [31101 31101 MEXICO] -> [31002 31002 BUCERIAS] -> [31131 31131 INGRESO SAYULITA] -> DEPOT (km: 81.21, boxes: 714.18)
+  Vehicle 1, Trip 1: DEPOT -> [31049 31049 GAS LOS PICOS] -> [31041 31041 CRUZ HUANACAXTLE] -> [31051 31051 SAYULITA] -> [31104 31104 REVOLUCION SAYULITA] -> [31052 31052 SAN PANCHO] -> DEPOT (km: 93.17, boxes: 704.66)
+  Vehicle 1, Trip 2: DEPOT -> [31125 31125 PUNTA MITA] -> [31165 31165 CRUCERO SAN PANCHO] -> [31102 31102 LO DE MARCOS] -> [31068 31068 CASA MARGARITA] -> DEPOT (km: 156.43, boxes: 619.35)
+  Vehicle 2, Trip 1: DEPOT -> [31063 31063 GUAYABITOS] -> [31064 31064 GUAYABITOS TABACHINES] -> [31072 31072 LOS AYALA] -> [31162 31162 AV CORAL] -> [31103 31103 LA PEÑITA] -> DEPOT (km: 158.86, boxes: 615.55)
+  Vehicle 2, Trip 2: DEPOT -> [31080 31080 GAS LA PEÑITA] -> [31161 31161 LOPEZ COTILLA] -> [31159 31159 LOS VENADOS] -> [31160 31160 TALPA INDEPENDENCIA] -> [31136 31136 PINO SUAREZ] -> [31135 31135 GALEANA] -> [31177 31177 CRUCERO LA CUMBRE] -> DEPOT (km: 486.73, boxes: 691.52)
+Day 11:
+  Vehicle 0, Trip 1: DEPOT -> [31170 31170 TALPA 23 DE JUNIO] -> [31172 31172 GAS TALPA] -> DEPOT (km: 240.13, boxes: 258.12)
+  Vehicle 0, Trip 2: DEPOT -> [31140 31140 DELFIN] -> [31180 31180 SAN MATEO] -> DEPOT (km: 320.51, boxes: 178.11)
+  Vehicle 1, Trip 1: no trip
+  Vehicle 1, Trip 2: no trip
+  Vehicle 2, Trip 1: no trip
+  Vehicle 2, Trip 2: no trip
+Day 12: (no routes)
+Day 13: (no routes)
+Day 14: (no routes)
+Route summary totals:
+  Total km: 4809.53
+  Total routes used: 41
+  Vehicles used per day:
+    Day 1: 0, 1, 2
+    Day 2: 0, 1, 2
+    Day 3: 0, 1, 2
+    Day 4: 0, 1
+    Day 5: none
+    Day 6: none
+    Day 7: none
+    Day 8: 0, 1, 2
+    Day 9: 0, 1, 2
+    Day 10: 0, 1, 2
+    Day 11: 0
+    Day 12: none
+    Day 13: none
+    Day 14: none
+  Stores visited more than required: none
+  Stores not visited at all: none
+Solver status: Optimal
+Solve time (sec): 5335.42
+Solution exported to: C:\Users\greth\OneDrive\Escritorio\reto_k2.0\outputs\solution_mazatlan.xlsx

@@ -1,0 +1,21 @@
+Distance matrix first column found: ID_TIENDA
+Total unique stores: 106
+Weekly stores (fi=2): 102
+Biweekly stores (fi=1): 4
+Min/max/avg demand per delivery (boxes): 52.04 / 242.18 / 126.52
+Distance matrix size: 111 x 111
+Max depot round-trip distance: 314.94 km (store 31180)
+Variable counts:
+  x: 858312
+  y: 8904
+  u: 8904
+  excess_km: 42
+  total: 876162
+Constraint count: 858940
+Greedy solution cost: 21508.09 (distance=4809.53, excess_penalty=16698.56)
+Warm start validation:
+Warm start violations found: 0
+Warm start warnings found: 2
+  - route-warning: v0, d4, r1 route_km=486.73 > 400
+  - route-warning: v2, d10, r2 route_km=486.73 > 400
+Warm start validation summary: 0 violations

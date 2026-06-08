@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "C:\Users\greth\OneDrive\Escritorio\reto_k2.0\main.py", line 164, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\greth\OneDrive\Escritorio\reto_k2.0\main.py", line 91, in main
+    status = solver.solve(
+        time_limit=args.timelimit,
+    ...<3 lines>...
+        checkpoint_path=base_dir / "outputs" / "checkpoint_best.xlsx",
+    )
+  File "C:\Users\greth\OneDrive\Escritorio\reto_k2.0\src\solver.py", line 37, in solve
+    return self._solve_streaming_cbc(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        time_limit=time_limit,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        checkpoint_path=checkpoint_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\greth\OneDrive\Escritorio\reto_k2.0\src\solver.py", line 135, in _solve_streaming_cbc
+    raise PulpSolverError("Pulp: Error while trying to execute CBC")
+pulp.apis.core.PulpSolverError: Pulp: Error while trying to execute CBC

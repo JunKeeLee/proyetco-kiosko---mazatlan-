@@ -1,0 +1,135 @@
+Distance matrix first column found: ID_TIENDA
+Total unique stores: 106
+Weekly stores (fi=2): 102
+Biweekly stores (fi=1): 4
+Min/max/avg demand per delivery (boxes): 52.04 / 242.18 / 126.52
+Distance matrix size: 111 x 111
+Max depot round-trip distance: 314.94 km (store 31180)
+Sampled stores: 15 of 106
+Variable counts:
+  x: 19824
+  y: 1260
+  u: 1260
+  excess_km: 42
+  total: 22386
+Constraint count: 20274
+Greedy solution cost: 3162.46 (distance=825.44, excess_penalty=2337.03)
+Warm start validation:
+Warm start violations found: 0
+Warm start warnings found: 0
+Warm start validation summary: 0 violations
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - C:\Users\greth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pulp\apis\../solverdir/cbc/win/i64/cbc.exe MT_PVRP_Mazatlan-pulp.mps -mips MT_PVRP_Mazatlan-pulp.mst -sec 20 -ratio 0.05 -timeMode elapsed -solve -printingOptions all -solution MT_PVRP_Mazatlan-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 20279 COLUMNS
+At line 202560 RHS
+At line 222835 BOUNDS
+At line 243920 ENDATA
+Problem MODEL has 20274 rows, 22386 columns and 120246 elements
+Coin0008I MODEL read with 0 errors
+opening mipstart file .\MT_PVRP_Mazatlan-pulp.mst.
+MIPStart values read for 22386 variables.
+seconds was changed from 1e+100 to 20
+ratioGap was changed from 0 to 0.05
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 510.746 - 0.09 seconds
+Cgl0004I processed model has 20274 rows, 22386 columns (21084 integer (21084 of which binary)) and 120246 elements
+Cbc0045I MIPStart provided solution with cost 3162.46
+[t=19s] New best solution found: 3162.46 km (gap: unknown)
+Cbc0012I Integer solution of 3162.4646 found by Reduced search after 0 iterations and 0 nodes (0.43 seconds)
+Cbc0038I Full problem 20274 rows 22386 columns, reduced to 17330 rows 1295 columns - too large
+Cbc0031I 181 added rows had average density of 19.78453
+Cbc0013I At root node, 181 cuts changed objective from 510.746 to 510.746 in 10 passes
+Cbc0014I Cut generator 0 (Probing) - 24 row cuts average 22.3 elements, 0 column cuts (125 active)  in 8.313 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 357 row cuts average 43.4 elements, 0 column cuts (0 active)  in 0.200 seconds - new frequency is 1
+Cbc0014I Cut generator 2 (Knapsack) - 2 row cuts average 11.0 elements, 0 column cuts (0 active)  in 0.107 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.002 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 373 row cuts average 2.3 elements, 0 column cuts (0 active)  in 0.084 seconds - new frequency is 1
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.073 seconds - new frequency is -100
+Cbc0014I Cut generator 6 (TwoMirCuts) - 550 row cuts average 40.0 elements, 0 column cuts (0 active)  in 0.179 seconds - new frequency is -100
+Cbc0010I After 0 nodes, 1 on tree, 3162.4646 best solution, best possible 510.746 (11.34 seconds)
+Cbc0038I Full problem 20274 rows 22386 columns, reduced to 17338 rows 1304 columns - too large
+Cbc0038I Full problem 20274 rows 22386 columns, reduced to 17340 rows 1304 columns - too large
+Cbc0010I After 100 nodes, 92 on tree, 3162.4646 best solution, best possible 510.746 (19.10 seconds)
+Cbc0020I Exiting on maximum time
+Cbc0005I Partial search - best objective 3162.4646 (best possible 510.746), took 3722 iterations and 115 nodes (19.78 seconds)
+Cbc0032I Strong branching done 972 times (6851 iterations), fathomed 3 nodes and fixed 5 variables
+Cbc0035I Maximum depth 97, 927 variables fixed on reduced cost
+Cuts at root node changed objective from 510.746 to 510.746
+Probing was tried 10 times and created 24 cuts of which 125 were active after adding rounds of cuts (8.313 seconds)
+Gomory was tried 52 times and created 590 cuts of which 0 were active after adding rounds of cuts (0.814 seconds)
+Knapsack was tried 10 times and created 2 cuts of which 0 were active after adding rounds of cuts (0.107 seconds)
+Clique was tried 10 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.002 seconds)
+MixedIntegerRounding2 was tried 52 times and created 962 cuts of which 0 were active after adding rounds of cuts (0.415 seconds)
+FlowCover was tried 10 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.073 seconds)
+TwoMirCuts was tried 10 times and created 550 cuts of which 0 were active after adding rounds of cuts (0.179 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.009 seconds)
+
+Result - Stopped on time limit
+
+Objective value:                3162.46460000
+Lower bound:                    510.746
+Gap:                            5.19
+Enumerated nodes:               115
+Total iterations:               3722
+Time (CPU seconds):             19.96
+Time (Wallclock seconds):       19.96
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       20.41   (Wallclock seconds):       20.41
+
+[checkpoint] Saved current best routes to C:\Users\greth\OneDrive\Escritorio\reto_k2.0\outputs\checkpoint_best.xlsx
+Route summary:
+Day 1:
+  Vehicle 0, Trip 1: DEPOT -> [31065 31065 CRUCERO LAS JUNTAS] -> [31010 31010 LOS PATOS] -> [31054 31054 AURORA] -> [31019 31019 ETZIQUIO CORONA] -> [31116 31116 10 DE MAYO] -> DEPOT (km: 22.39, boxes: 654.06)
+  Vehicle 0, Trip 2: DEPOT -> [31057 31057 VALLE DORADO] -> [31035 31035 VIENA] -> [31128 31128 BUGAMBILIAS] -> [31155 31155 VALLE EL JADE] -> [31112 31112 MAR CARIBE] -> DEPOT (km: 73.47, boxes: 676.63)
+  Vehicle 1, Trip 1: DEPOT -> [31012 31012 GAS FLAMINGOS] -> [31104 31104 REVOLUCION SAYULITA] -> [31068 31068 CASA MARGARITA] -> [31064 31064 GUAYABITOS TABACHINES] -> DEPOT (km: 140.26, boxes: 513.49)
+  Vehicle 1, Trip 2: DEPOT -> [31161 31161 LOPEZ COTILLA] -> DEPOT (km: 176.59, boxes: 106.84)
+  Vehicle 2, Trip 1: no trip
+  Vehicle 2, Trip 2: no trip
+Day 2: (no routes)
+Day 3: (no routes)
+Day 4: (no routes)
+Day 5: (no routes)
+Day 6: (no routes)
+Day 7: (no routes)
+Day 8:
+  Vehicle 0, Trip 1: DEPOT -> [31065 31065 CRUCERO LAS JUNTAS] -> [31010 31010 LOS PATOS] -> [31054 31054 AURORA] -> [31019 31019 ETZIQUIO CORONA] -> [31116 31116 10 DE MAYO] -> DEPOT (km: 22.39, boxes: 654.06)
+  Vehicle 0, Trip 2: DEPOT -> [31057 31057 VALLE DORADO] -> [31035 31035 VIENA] -> [31128 31128 BUGAMBILIAS] -> [31155 31155 VALLE EL JADE] -> [31112 31112 MAR CARIBE] -> DEPOT (km: 73.47, boxes: 676.63)
+  Vehicle 1, Trip 1: DEPOT -> [31012 31012 GAS FLAMINGOS] -> [31104 31104 REVOLUCION SAYULITA] -> [31068 31068 CASA MARGARITA] -> [31064 31064 GUAYABITOS TABACHINES] -> DEPOT (km: 140.26, boxes: 513.49)
+  Vehicle 1, Trip 2: DEPOT -> [31161 31161 LOPEZ COTILLA] -> DEPOT (km: 176.59, boxes: 106.84)
+  Vehicle 2, Trip 1: no trip
+  Vehicle 2, Trip 2: no trip
+Day 9: (no routes)
+Day 10: (no routes)
+Day 11: (no routes)
+Day 12: (no routes)
+Day 13: (no routes)
+Day 14: (no routes)
+Route summary totals:
+  Total km: 825.44
+  Total routes used: 8
+  Vehicles used per day:
+    Day 1: 0, 1
+    Day 2: none
+    Day 3: none
+    Day 4: none
+    Day 5: none
+    Day 6: none
+    Day 7: none
+    Day 8: 0, 1
+    Day 9: none
+    Day 10: none
+    Day 11: none
+    Day 12: none
+    Day 13: none
+    Day 14: none
+  Stores visited more than required: none
+  Stores not visited at all: none
+Solver status: Optimal
+Solve time (sec): 20.59
+Solution exported to: C:\Users\greth\OneDrive\Escritorio\reto_k2.0\outputs\solution_mazatlan.xlsx
